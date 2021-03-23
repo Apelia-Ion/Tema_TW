@@ -1,0 +1,121 @@
+/**************************BODY****************************/
+
+body{
+    background-image: url('Background2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  /**************************HEADER****************************/
+  
+  header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  #titlu
+  {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+    background:lightgray;
+      border: 2px solid grey;
+      border-radius: 15px;
+      padding: 10px;    
+  }
+
+/**************************MENIU********************************/
+
+  .menu{
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+  
+  }
+  .menu-item{
+    
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 7px 43px 7px 43px;
+    background:lightgray;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color:black;
+    vertical-align: middle;
+    text-align: center;
+    border: 2px solid grey;
+    border-radius: 15px;
+  }
+
+
+  /*************************CONTINUT*********************************/
+.evenimente{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 20px;
+    text-align: justify;
+    justify-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+.esubtitlu{
+    text-align: center;
+    color: brown;
+}
+.ev{
+    background-color: white;
+    border: solid gray;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.ev > img{
+    margin: 5px;
+    border: solid black;
+    
+}
+
+/**************************RESPONSIVENESS****************************/
+
+@media (max-width: 768px){
+    #titlu{
+        display: none;
+         }
+      
+      .menu{
+      display: none;
+          }
+     
+.evenimente{
+     display: block;
+            }
+.ev{
+      width: auto;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1280px)
+{
+  #titlu{
+    display: none;
+  }
+  
+    .evenimente{
+        grid-template-columns: 50% 50%;
+    } 
+    
+}
