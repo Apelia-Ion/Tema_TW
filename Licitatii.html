@@ -1,0 +1,50 @@
+<!DOCTYPE>
+<html>
+     <head>
+         <title>Licitatii</title>
+         <meta charset="UTF-8">
+         <link rel="stylesheet" href="styleLicitatii.css">
+         
+    </head>
+    <body>
+        <header>
+          <h1 id="titlu">Licitatii</h1>
+        </header>
+        <nav class="menu">
+        <a class="menu-item" href="ARTA.html"><i class="fa fa-user"></i>Arta contemporana </a>
+        <a class="menu-item" href="Creatori.html"><i class="fa fa-file-text"></i> Creatori</a>
+        <a class="menu-item" href="Romania.html"><i class="fa fa-heart"></i> Arta modernă în România</a>
+        <a class="menu-item" href="Evenimente.html"><i class="fa fa-user"></i>Evenimente </a>
+       </nav>
+       <main class="continut">
+         <div class="paragraf">
+         <p>Site-ul nostru va ofera posibilitatea de a participa la licitatii pentru o multitudine de opere de arta contemporana.</p>
+         
+          <label class="question">
+           Daca sunteti interesat sau doriti sa achizitionati o creatie, introduceti numele si prenumele dvs.
+           <br>
+           Nume:  
+          <input type="text" id="nume"/> 
+          <br>
+          Prenume:
+          <input type="text" id="prenume"/>
+          <br>
+          <button id="date">Trimite</button>  <!--event listener- scrie in sectiunea urmatoare-->
+         </label>
+         <section id="interesat">   
+         </section>
+         <section id="oferte">
+         </section>
+         
+         <label id="creator">
+           Sau, daca sunteti un artist ce doreste sa isi vanda creatiile, apasati pe butonul de mai jos:
+           <br>
+           <button id="suntArtist" onclick="post()">Sunt Artist</button>
+         </label>
+         <section id="dateAdaugat">
+         </section>
+      </div>
+      </main >
+
+      <script src="Licitatii.js"></script>
+        </body>

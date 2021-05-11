@@ -1,0 +1,51 @@
+{
+  "Obiecte": [
+    {
+      "id": 1,
+      "name": "Supper in Dresden",
+      "artist": "Creator: Georg Baselitz",
+      "year": "An aparitie: 1983",
+      "sPrice": "Pret: 20000",
+      "img": "Imagini/Supper in Dresden.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Igloo with Tree",
+      "artist": "Creator: Mario Merz",
+      "year": "An aparitie: 1969",
+      "sPrice": "Pret:14000",
+      "img": "Imagini/Igloo with Tree.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Der Ausgang - Karl",
+      "artist": "Creator: Georg Baselitz",
+      "year": "An aparitie: 1987",
+      "sPrice": "Pret: 7000",
+      "img": "Imagini/Der Ausgang - Karl.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Free and Leisure-10",
+      "artist": "Creator: Yue Minjun",
+      "year": "An aparitie: 2003",
+      "sPrice": "Pret: 2600",
+      "img": "Imagini/Free and Leisure-10.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Silueta series",
+      "artist": "Creator: Ana Mendieta",
+      "year": "An aparitie: 1974",
+      "sPrice": "Pret: 9000",
+      "img": "Imagini/Silueta series.jpg"
+    },
+    {
+      "artist": "",
+      "year": "",
+      "sPrice": "",
+      "img": "",
+      "id": 6
+    }
+  ]
+}
