@@ -58,13 +58,36 @@ function afisare()    //GET
                     //pret
                     var pret=document.createElement("p");
                     pret.innerText=data[i].sPrice;
-                    sectiuneOferte.appendChild(pret);                   
+                    sectiuneOferte.appendChild(pret);  
+                    
+                    /////////////////////////////////////  Delete 
+                     var buton4=document.createElement("button");
+                     buton4.innerText="Sterge";
+                     buton4.addEventListener("click", function() {
+                         //console.log(data[i].id)
+                        deleteObiect(data[i].id);
+                                                } )      
+                     sectiuneOferte.appendChild(buton4);
+
+                
+
                 }
 
             })
         });                                          
      
-}                          
+}   
+
+function deleteObiect(id) {
+    fetch('http://localhost:3000/Obiecte/' + id, {
+        method: 'delete',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }).then(function(response) {
+        window.location.reload();
+    })
+}
 
 var optiune=document.getElementById("creator");
 optiune.style.color='darkslateblue';                        //edit pe nod
@@ -114,9 +137,14 @@ function post()
 
     var buton3=document.createElement("button");
     buton3.innerText="Trimite";
+    buton3.onclick=function (){addelemente()}
     var linebreak = document.createElement("br");
     section.appendChild(linebreak);
     section.appendChild(buton3);
+    
+}
+
+function addelemente(){
 
     let innume=document.getElementById("inume").value;
     var inautor=document.getElementById("iautor").value;
@@ -134,8 +162,6 @@ function post()
     }
 
     
-    buton3.addEventListener("click", function()
-    {
         fetch('http://localhost:3000/Obiecte', {
         method: 'post', 
         headers: {
@@ -145,8 +171,5 @@ function post()
     }).then(function(response) {
         console.log(response);
     })
-    })
-
     
 }
-
